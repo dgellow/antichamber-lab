@@ -1,0 +1,30 @@
+{
+  "name": "antichamber-lab",
+  "private": true,
+  "version": "0.0.1",
+  "description": "Experiments with some Antichamber's concepts",
+  "author": "Samuel El-Borai <samuel.elborai@gmail.com>",
+    "repository": {
+      "type": "git",
+      "url": "https://github.com/dgellow/antichamber-lab.git"
+  },
+  "bugs": {
+    "url": "https://github.com/dgellow/antichamber-lab/issues"
+  },
+  "homepage": "https://github.com/dgellow/antichamber-lab",
+  "scripts": {
+    "browser": "browser-sync start --server --files \"bundle.js, main.css, index.html\"",
+    "build": "browserify -e src/main.js -o bundle.js",
+    "watch": "watchify -vd -e src/main.js -o bundle.js",
+    "clean": "rm bundle.js"
+  },
+  "dependencies": {
+    "lodash": "^3.6.0",
+    "three": "^0.70.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.5.3",
+    "browserify": "^9.0.7",
+    "watchify": "^3.1.0"
+  }
+}
