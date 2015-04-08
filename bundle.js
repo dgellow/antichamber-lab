@@ -34772,7 +34772,7 @@ function createAmbientLight(config) {
 
 function createFloor(config) {
     var texture = new Three.ImageUtils.loadTexture(
-        '/images/checkerboard.jpg'
+        'images/checkerboard.jpg'
     );
     texture.wrapS = texture.wrapT = Three.RepeatWrapping;
     texture.repeat.set(10, 10);
@@ -34793,7 +34793,7 @@ function createFloor(config) {
 
 function createSkybox(config) {
     var materialDefinition = {
-        map: Three.ImageUtils.loadTexture('/images/night-sky.jpg')
+        map: Three.ImageUtils.loadTexture('images/night-sky.jpg')
     };
 
     var materials = [];
